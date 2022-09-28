@@ -1,0 +1,155 @@
+:root{
+    /*variables de color / Paleta de colores*/
+    --blanco: #ffffff;
+    --oscuro: #000000;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    
+}
+
+
+html{
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+body{ /*Fuente que se va a aplicar en el cuerpo de la página*/
+    font-family: 'Nunito', sans-serif;
+}
+
+h2{
+
+    font-size: 3rem;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Parte de arriba donde va el logo y la imagen de usuario*/
+
+.titulo{                                 /*fondo de la parte superior*/
+    
+    padding: 1rem;                      /*Se utiliza para alargar o ensanchar un elemento en este caso es el fondo*/
+    margin-top: -8px;                   /*margen a la derecha*/
+    margin-left: -8px;
+    margin-right: -8px;
+    background-color: var(--primario);  /*Color de fondo*/
+    font-size: 2.5rem;
+    
+
+}
+
+@media (min-width : 768px) {            /*se utiliza para hacer el responsive de la página*/
+    .titulo{
+
+
+    }
+}
+
+.navegacion{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.logo{
+    background-color: white;
+    border-radius: 100%;
+    padding: 1rem;
+    
+    margin-left: 1.5rem;
+    color: var(--oscuro);
+    text-decoration: none;
+    font-weight: normal;
+
+
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+   
+
+}
+
+@media (min-width : 768px) {
+    .logo img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+.usuario{
+    margin-top: 1rem;
+    padding: auto;
+    margin-right: .5rem;
+    
+}
+
+.usuario svg{
+
+    width: 120px;
+    height: 120px;
+
+}
+
+
+.subtitulo{
+    
+    text-align: center;
+    
+
+}
+
+@media (min-width : 768px) {
+    .subtitulo{
+        text-align: left;
+        
+    }
+    
+}
+
+.contenido_sub{
+    font-size: 4rem;
+    font-weight: normal;    
+    
+}
+
+.usuario_sub{
+
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Formulario*/
+
+.formulario{
+    
+    text-align: center;
+}
+
+@media (min-width : 768px) {
+    .formulario{
+
+        
+    text-align: left;
+        
+    }
+    
+}
